@@ -1474,28 +1474,17 @@
    <script>
 function showPage(pageId) {
     const pages = document.querySelectorAll('.page');
+    pages.forEach(page => page.style.display = 'none');
 
-    // Ocultar todas las páginas
-    pages.forEach(page => {
-        page.style.display = 'none';
-    });
-
-    // Mostrar la página seleccionada
     const pageToShow = document.getElementById(pageId);
     if (pageToShow) {
         pageToShow.style.display = 'block';
     }
-
-    // Botones activos (opcional, pero bonito)
-    const buttons = document.querySelectorAll('.nav-btn');
-    buttons.forEach(btn => btn.classList.remove('active'));
-    event.target.classList.add('active');
 }
 
-// Mostrar INICIO al cargar la web
 window.onload = function () {
     showPage('inicio');
-        }
-    </script>
+    };
+</script>
 </body>
 </html>
