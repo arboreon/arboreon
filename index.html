@@ -1483,6 +1483,34 @@
             
             window.scrollTo(0, 0);
         }
-    </script>
-</body>
-</html>
+		<script>
+function showPage(pageId) {
+    // Ocultar todas las páginas
+    document.querySelectorAll('.page').forEach(page => {
+        page.style.display = 'none';
+    });
+
+    // Quitar activo de todos los botones
+    document.querySelectorAll('.nav-btn').forEach(btn => {
+        btn.classList.remove('active');
+    });
+
+    // Mostrar la página seleccionada
+    const selectedPage = document.getElementById(pageId);
+    if (selectedPage) {
+        selectedPage.style.display = 'block';
+    }
+
+    // Marcar botón activo
+    document.querySelectorAll('.nav-btn').forEach(btn => {
+        if (btn.getAttribute('onclick') && btn.getAttribute('onclick').includes(pageId)) {
+            btn.classList.add('active');
+        }
+    });
+}
+
+// Mostrar INICIO al cargar la página
+document.addEventListener('DOMContentLoaded', () => {
+    showPage('inicio');
+});
+</script>
