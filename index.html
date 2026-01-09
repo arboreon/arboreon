@@ -321,7 +321,7 @@
         .product-card {
             background: var(--white);
             border-radius: 12px;
-            overflow: auto;
+            overflow: hidden;
             box-shadow: 0 4px 15px rgba(0,0,0,0.1);
             transition: all 0.3s ease;
             border-top: 4px solid var(--color-secondary);
@@ -350,7 +350,7 @@
             gap: 10px;
             margin-bottom: 20px;
             border-radius: 8px;
-            overflow: auto;
+            overflow: hidden;
         }
         
         .product-gallery img {
@@ -908,7 +908,7 @@
                     </div>
                 </div>
 
-               <!-- ABRECAMINOS (NUEVAS IMÁGENES) -->
+               <!-- ABRECAMINOS -->
                 <div class="product-card">
                     <div class="product-header">ABRECAMINOS<br>Un bosque húmedo en miniatura</div>
                     <div class="product-body">
@@ -936,7 +936,7 @@
                     </div>
                 </div>
 
-                <!-- DESIERTO ENCANTADO (NUEVAS IMÁGENES) -->
+                <!-- DESIERTO ENCANTADO -->
                 <div class="product-card">
                     <div class="product-header">DESIERTO ENCANTADO<br>Magia en el desierto</div>
                     <div class="product-body">
@@ -967,7 +967,7 @@
                     </div>
                 </div>
 
-                <!-- NEXO (NUEVAS IMÁGENES) -->
+                <!-- NEXO -->
                 <div class="product-card">
                     <div class="product-header">NEXO<br>Encuentro mágico en miniatura</div>
                     <div class="product-body">
@@ -997,7 +997,7 @@
                     </div>
                 </div>
 
-                <!-- CHISPA (NUEVAS IMÁGENES) -->
+                <!-- CHISPA -->
                 <div class="product-card">
                     <div class="product-header">CHISPA<br>Un ocaso diminuto para tu espacio</div>
                     <div class="product-body">
@@ -1026,7 +1026,7 @@
                     </div>
                 </div>
 
-                <!-- UÑAS DE SEÑORITA (NUEVAS IMÁGENES) -->
+                <!-- UÑAS DE SEÑORITA -->
                 <div class="product-card">
                     <div class="product-header">UÑAS DE SEÑORITA<br>Audacia serena en un terrario</div>
                     <div class="product-body">
@@ -1054,7 +1054,7 @@
                     </div>
                 </div>
 
-                <!-- CORAZÓN ESPINOSO (NUEVAS IMÁGENES) -->
+                <!-- CORAZÓN ESPINOSO -->
                 <div class="product-card">
                     <div class="product-header">CORAZÓN ESPINOSO<br>Ternura en forma de cactus</div>
                     <div class="product-body">
@@ -1112,7 +1112,7 @@
                     </div>
                 </div>
 
-              <!-- VERDELAB (NUEVAS IMÁGENES) -->
+              <!-- VERDELAB -->
                 <div class="product-card">
                     <div class="product-header">VERDELAB<br>Laboratorio vivo de diseño y naturaleza</div>
                     <div class="product-body">
@@ -1139,7 +1139,7 @@
                     </div>
                 </div>
 
-                <!-- TERRARIO COLGANTE (NUEVAS IMÁGENES) -->
+                <!-- TERRARIO COLGANTE -->
                 <div class="product-card">
                     <div class="product-header">TERRARIO COLGANTE<br>Un rincón zen suspendido</div>
                     <div class="product-body">
@@ -1167,7 +1167,7 @@
                     </div>
                 </div>
 
-                <!-- DANZA AÉREA (NUEVAS IMÁGENES) -->
+                <!-- DANZA AÉREA -->
                 <div class="product-card">
                     <div class="product-header">DANZA AÉREA<br>Escape natural en suspensión</div>
                     <div class="product-body">
@@ -1195,7 +1195,7 @@
                     </div>
                 </div>
 
-                <!-- CACTUS MANIA (NUEVAS IMÁGENES DE MACETA) -->
+                <!-- CACTUS MANIA -->
                 <div class="product-card">
                     <div class="product-header">CACTUS MANIA<br>Carácter indómito en tu escritorio</div>
                     <div class="product-body">
@@ -1223,7 +1223,7 @@
                     </div>
                 </div>
 
-                <!-- MACETAS-CACTUS / PINCHOS REBELDES (NUEVAS IMÁGENES + LOGO) -->
+                <!-- PINCHOS REBELDES -->
                 <div class="product-card">
                     <div class="product-header">PINCHOS REBELDES<br>Combo rebelde de cactus</div>
                     <div class="product-body">
@@ -1252,7 +1252,7 @@
                     </div>
                 </div>
 
-                <!-- VERDE P / VERDE POCKET (NUEVAS IMÁGENES + LOGO) -->
+                <!-- VERDE POCKET -->
                 <div class="product-card">
                     <div class="product-header">VERDE POCKET<br>Suculentas minimalistas para tu espacio</div>
                     <div class="product-body">
@@ -1279,8 +1279,9 @@
                         <div class="product-price">18.000–40.000 COP (según tamaño)</div>
                     </div>
                 </div>
+            </div>
 
-            <!-- PERSONALIZACIÓN COMO SUBSECCIÓN -->
+            <!-- PERSONALIZACIÓN -->
             <div class="personalization-section">
                 <h2 style="text-align:center; color: var(--color-primary); margin-bottom:10px;">Personaliza tu terrario</h2>
                 <p style="text-align:center; color: var(--text-light); max-width:700px; margin:0 auto 25px;">
@@ -1316,136 +1317,76 @@
         </div>
     </div>
 
-    <!-- PÁGINA 3 ENVIOS -->
-   <div id="envios" class="page">
-    <div class="container">
-
-        <div class="catalog-header">
-            <h1>Envíos en Bogotá</h1>
-            <p style="color: var(--text-light); font-size: 16px;">
-                Se calcula costo de envío según lugar de entrega.
-            </p>
-        </div>
-
-        <div style="background: var(--white); padding: 30px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); margin-bottom: 40px;">
-            <h3 style="color: var(--color-primary); margin-bottom: 15px; text-align: center;">
-                Tener en cuenta:
-            </h3>
-            <ul style="color: var(--text-light); line-height: 1.8; list-style: none; padding: 0;">
-                <li>Tiempo de entrega es de 1 día calendario a partir de la confirmación del pago (no incluye domingos, ni festivos).</li>
-                <li>Los pedidos se realizan a través de WhatsApp: <strong>+57 3161831651</strong></li>
-                <li>Cada terrario se envía embalado, para protegerlo.</li>
-            </ul>
-        </div>
-
-        <p style="color: var(--text-light); font-size: 16px; margin-bottom: 30px;">
-            Nuestro punto de fabricación está en Suba - Barrio Gilmar. Calculamos el envío según la localidad.
-        </p>
-
-        <div class="shipping-grid">
-            <div class="zone-card">
-                <h3>Suba</h3>
-                <div class="zone-price">8.000</div>
-                <p class="zone-text">Zona más cercana al taller. Incluye barrios Gilmar, Niza, Rincón, Tibabuyes y alrededores.</p>
+    <!-- PÁGINA 3 ENVIOS (CORREGIDA ESTRUCTURALMENTE) -->
+    <div id="envios" class="page">
+        <div class="container">
+            <div class="catalog-header">
+                <h1>Envíos en Bogotá</h1>
+                <p style="color: var(--text-light); font-size: 16px;">Se calcula costo de envío según lugar de entrega.</p>
+            </div>
+            
+            <div style="background: var(--white); padding: 30px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); margin-bottom: 40px;">
+                <h3 style="color: var(--color-primary); margin-bottom: 15px; text-align: center;">Tener en cuenta:</h3>
+                <ul style="color: var(--text-light); line-height: 1.8; list-style: none; padding: 0;">
+                    <li>Tiempo de entrega es de 1 día calendario a partir de la confirmación del pago (no incluye domingos, ni festivos).</li>
+                    <li>Los pedidos se realizan a través de WhatsApp: <strong>+57 3161831651</strong></li>
+                    <li>Cada terrario se envía embalado, para protegerlo.</li>
+                </ul>
             </div>
 
-            <div class="zone-card">
-                <h3>Engativá</h3>
-                <div class="zone-price">10.000</div>
-                <p class="zone-text">Áreas como Minuto de Dios, Boyacá Real, Normandía y barrios cercanos.</p>
+            <p style="text-align: center; color: var(--text-light); font-size: 16px; margin-bottom: 20px;">Nuestro punto de fabricación está en Suba - Barrio Gilmar. Calculamos el envío según la localidad.</p>
+
+            <div class="shipping-grid">
+                <div class="zone-card"><h3>Suba</h3><div class="zone-price">8.000</div><p class="zone-text">Zona más cercana al taller.</p></div>
+                <div class="zone-card"><h3>Engativá</h3><div class="zone-price">10.000</div><p class="zone-text">Minuto de Dios, Normandía.</p></div>
+                <div class="zone-card"><h3>Usaquén</h3><div class="zone-price">12.000</div><p class="zone-text">Cedritos, Bella Suiza, Contador.</p></div>
+                <div class="zone-card"><h3>Barrios Unidos/Teusaquillo</h3><div class="zone-price">14.000</div><p class="zone-text">Galerías, Nicolás de Federmán.</p></div>
+                <div class="zone-card"><h3>Chapinero/Santa Fe</h3><div class="zone-price">15.000</div><p class="zone-text">Chapinero alto y bajo.</p></div>
+                <div class="zone-card"><h3>Fontibón/Puente Aranda</h3><div class="zone-price">16.000</div><p class="zone-text">Zonas del occidente.</p></div>
+                <div class="zone-card"><h3>Kennedy/Bosa</h3><div class="zone-price">18.000</div><p class="zone-text">Castilla, Tintal, Bosa.</p></div>
+                <div class="zone-card"><h3>Tunjuelito/Uribe/S. Cristóbal</h3><div class="zone-price">20.000</div><p class="zone-text">Localidades del sur.</p></div>
+                <div class="zone-card"><h3>Usme/Ciudad Bolívar</h3><div class="zone-price">22.000</div><p class="zone-text">Zonas de mayor distancia.</p></div>
+                <div class="zone-card"><h3>Periferia (Chía, etc)</h3><div class="zone-price">25.000</div><p class="zone-text">Sujeto a disponibilidad.</p></div>
             </div>
 
-            <div class="zone-card">
-                <h3>Usaquén</h3>
-                <div class="zone-price">12.000</div>
-                <p class="zone-text">Cedritos, Bella Suiza, Contador, Country y sectores aledaños.</p>
-            </div>
-
-            <div class="zone-card">
-                <h3>Barrios Unidos<br>Teusaquillo</h3>
-                <div class="zone-price">14.000</div>
-                <p class="zone-text">Galerías, Nicolás de Federmán, Polo, Modelo, Campín y alrededores.</p>
-            </div>
-
-            <div class="zone-card">
-                <h3>Chapinero<br>Santa Fe</h3>
-                <div class="zone-price">15.000</div>
-                <p class="zone-text">Zona universitaria, Chapinero alto y bajo, centro internacional.</p>
-            </div>
-
-            <div class="zone-card">
-                <h3>Fontibón<br>Puente Aranda</h3>
-                <div class="zone-price">16.000</div>
-                <p class="zone-text">Zonas industriales, comerciales y residenciales del occidente de la ciudad.</p>
-            </div>
-
-            <div class="zone-card">
-                <h3>Kennedy<br>Bosa</h3>
-                <div class="zone-price">18.000</div>
-                <p class="zone-text">Barrios del sur-occidente como Castilla, Tintal, Bosa central, etc.</p>
-            </div>
-
-            <div class="zone-card">
-                <h3>Tunjuelito<br>Rafael Uribe<br>San Cristóbal</h3>
-                <div class="zone-price">20.000</div>
-                <p class="zone-text">Localidades del sur con acceso mediante rutas principales.</p>
-            </div>
-
-            <div class="zone-card">
-                <h3>Usme<br>Ciudad Bolívar</h3>
-                <div class="zone-price">22.000</div>
-                <p class="zone-text">Zonas de mayor distancia desde Suba. Coordinamos horario especial.</p>
-            </div>
-
-            <div class="zone-card">
-                <h3>Sumapaz<br><strong>Periferia:</strong> Chía, Cota, Tenjo, Zipaquirá, etc.</h3>
-                <div class="zone-price">25.000</div>
-                <p class="zone-text">Envíos sujetos a disponibilidad y coordinación previa.</p>
+            <div style="background: var(--white); padding: 30px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); margin-top:40px;">
+                <h3 style="color: var(--color-primary); margin-bottom: 15px;">Política de envíos</h3>
+                <ul style="color: var(--text-light); line-height: 1.8; list-style:none; padding:0;">
+                    <li>Los tiempos de entrega habituales son de 3 a 5 días hábiles según la localidad.</li>
+                    <li>El envío se coordina por WhatsApp para asegurar que alguien reciba el terrario.</li>
+                    <li>Todos los terrarios viajan con embalaje especial para proteger las plantas y el vidrio.</li>
+                    <li>También puedes recoger tu pedido en Suba - Gilmar con cita previa.</li>
+                </ul>
             </div>
         </div>
-
-        <div style="background: var(--white); padding: 30px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); margin-top:40px;">
-            <h3 style="color: var(--color-primary); margin-bottom: 15px;">
-                Política de envíos
-            </h3>
-            <ul style="color: var(--text-light); line-height: 1.8; list-style:none; padding:0;">
-                <li>Los tiempos de entrega habituales son de 3 a 5 días hábiles según la localidad.</li>
-                <li>El envío se coordina por WhatsApp para asegurar que alguien reciba el terrario.</li>
-                <li>Todos los terrarios viajan con embalaje especial para proteger las plantas y el vidrio.</li>
-                <li>Si el envío presenta algún daño, puedes escribirnos el mismo día con fotos para gestionar solución.</li>
-                <li>También puedes recoger tu pedido en Suba - Gilmar con cita previa.</li>
-            </ul>
-        </div>
-
     </div>
-</div>
 
     <!-- PÁGINA 4 PAGOS -->
     <div id="pagos" class="page">
-    <div class="container">
-        <div class="catalog-header">
-            <h1>Medios de Pago</h1>
-            <p style="color: var(--text-light); font-size: 16px;">Elige el método más conveniente. Escríbenos por WhatsApp para coordinar.</p>
-        </div>
-        <div class="payments-grid">
-            <div class="payment-card">
-                <div class="payment-icon">🏦</div>
-                <h3>Bancolombia</h3>
-                <p>Transferencia bancaria. Te compartimos los datos al confirmar tu pedido.</p>
+        <div class="container">
+            <div class="catalog-header">
+                <h1>Medios de Pago</h1>
+                <p style="color: var(--text-light); font-size: 16px;">Elige el método más conveniente. Escríbenos por WhatsApp para coordinar.</p>
             </div>
-            <div class="payment-card">
-                <div class="payment-icon">📱</div>
-                <h3>Nequi</h3>
-                <p>Pago rápido desde tu celular. Te enviamos el número al coordinar.</p>
-            </div>
-            <div class="payment-card">
-                <img src="WhatsApp-Image-2026-01-06-at-12.23.58-AM.jpg" alt="Bre-B QR" style="width: 100%; height: auto; border-radius: 8px; margin-bottom: 10px;">
-                <h3>Bre-B</h3>
-                <p>Transferencia con llave Bre-B. Escanea el código QR o copia la llave al confirmar.</p>
+            <div class="payments-grid">
+                <div class="payment-card">
+                    <div class="payment-icon">🏦</div>
+                    <h3>Bancolombia</h3>
+                    <p>Transferencia bancaria. Te compartimos los datos al confirmar tu pedido.</p>
+                </div>
+                <div class="payment-card">
+                    <div class="payment-icon">📱</div>
+                    <h3>Nequi</h3>
+                    <p>Pago rápido desde tu celular. Te enviamos el número al coordinar.</p>
+                </div>
+                <div class="payment-card">
+                    <img src="WhatsApp-Image-2026-01-06-at-12.23.58-AM.jpg" alt="Bre-B QR" style="width: 100%; height: auto; border-radius: 8px; margin-bottom: 10px;">
+                    <h3>Bre-B</h3>
+                    <p>Transferencia con llave Bre-B. Escanea el código QR o copia la llave al confirmar.</p>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
     <!-- PÁGINA 5 CONTACTO -->
     <div id="contacto" class="page">
@@ -1460,25 +1401,21 @@
                         <div class="contact-icon">💬</div>
                         <h3>WhatsApp</h3>
                         <p><a href="https://wa.me/573161831651" target="_blank">3161831651</a></p>
-                        <p style="font-size: 12px; color: var(--text-light); margin-top: 10px;">Mensajes rápidos y consultas</p>
                     </div>
                     <div class="contact-item">
                         <div class="contact-icon">📸</div>
                         <h3>Instagram</h3>
                         <p><a href="https://www.instagram.com/arboreonco?igsh=bzF6OTltOGh1bXZy" target="_blank">@arboreonco</a></p>
-                        <p style="font-size: 12px; color: var(--text-light); margin-top: 10px;">Inspírate con nuestras creaciones</p>
                     </div>
                     <div class="contact-item">
                         <div class="contact-icon">📘</div>
                         <h3>Facebook</h3>
                         <p><a href="https://facebook.com/Arboreon" target="_blank">Arboreon</a></p>
-                        <p style="font-size: 12px; color: var(--text-light); margin-top: 10px;">Conecta con nuestra comunidad</p>
                     </div>
                     <div class="contact-item">
                         <div class="contact-icon">🎵</div>
                         <h3>TikTok</h3>
                         <p><a href="https://www.tiktok.com/@arboreon3?r1tZS-92N56mYvYPa" target="_blank">@arboreon3</a></p>
-                        <p style="font-size: 12px; color: var(--text-light); margin-top: 10px;">Videos y tendencias verdes</p>
                     </div>
                 </div>
             </div>
@@ -1490,22 +1427,34 @@
         <p><strong>ARBOREON - El arte de llevar la naturaleza a tus espacios</strong></p>
         <p>Terrarios artesanales • Diseño único • Fácil cuidado</p>
         <p>&copy; 2025 Arboreon Colombia. Todos los derechos reservados.</p>
-        <p>Creado con ❤️ para amantes de la naturaleza</p>
     </footer>
 
    <script>
-function showPage(pageId) {
-    const pages = document.querySelectorAll('.page');
-    pages.forEach(page => page.style.display = 'none');
+    function showPage(pageId) {
+        // Ocultar todas las páginas
+        const pages = document.querySelectorAll('.page');
+        pages.forEach(page => page.style.display = 'none');
 
-    const pageToShow = document.getElementById(pageId);
-    if (pageToShow) {
-        pageToShow.style.display = 'block';
+        // Mostrar la página seleccionada
+        const pageToShow = document.getElementById(pageId);
+        if (pageToShow) {
+            pageToShow.style.display = 'block';
+        }
+
+        // Gestionar estado activo de botones
+        const buttons = document.querySelectorAll('.nav-btn');
+        buttons.forEach(btn => btn.classList.remove('active'));
+        
+        // Buscar el botón que se presionó (por su parámetro en onclick)
+        const currentBtn = Array.from(buttons).find(btn => btn.getAttribute('onclick').includes(pageId));
+        if (currentBtn) currentBtn.classList.add('active');
+
+        // Subir al inicio de la página por comodidad
+        window.scrollTo(0, 0);
     }
-}
 
-window.onload = function () {
-    showPage('inicio');
+    window.onload = function () {
+        showPage('inicio');
     };
 </script>
 </body>
