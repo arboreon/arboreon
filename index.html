@@ -1471,48 +1471,31 @@
         <p>Creado con ❤️ para amantes de la naturaleza</p>
     </footer>
 
-    <script>
-        function showPage(pageId) {
-            const pages = document.querySelectorAll('.page');
-            pages.forEach(page => page.classList.remove('active'));
-            document.getElementById(pageId).classList.add('active');
-            
-            const buttons = document.querySelectorAll('.nav-btn');
-            buttons.forEach(btn => btn.classList.remove('active'));
-            event.target.classList.add('active');
-            
-            window.scrollTo(0, 0);
-        }
-		<script>
+   <script>
 function showPage(pageId) {
+    const pages = document.querySelectorAll('.page');
+
     // Ocultar todas las páginas
-    document.querySelectorAll('.page').forEach(page => {
+    pages.forEach(page => {
         page.style.display = 'none';
     });
 
-    // Quitar activo de todos los botones
-    document.querySelectorAll('.nav-btn').forEach(btn => {
-        btn.classList.remove('active');
-    });
-
     // Mostrar la página seleccionada
-    const selectedPage = document.getElementById(pageId);
-    if (selectedPage) {
-        selectedPage.style.display = 'block';
+    const pageToShow = document.getElementById(pageId);
+    if (pageToShow) {
+        pageToShow.style.display = 'block';
     }
 
-    // Marcar botón activo
-    document.querySelectorAll('.nav-btn').forEach(btn => {
-        if (btn.getAttribute('onclick') && btn.getAttribute('onclick').includes(pageId)) {
-            btn.classList.add('active');
-        }
-    });
+    // Botones activos (opcional, pero bonito)
+    const buttons = document.querySelectorAll('.nav-btn');
+    buttons.forEach(btn => btn.classList.remove('active'));
+    event.target.classList.add('active');
 }
 
-// Mostrar INICIO al cargar la página
-document.addEventListener('DOMContentLoaded', () => {
+// Mostrar INICIO al cargar la web
+window.onload = function () {
     showPage('inicio');
-});
-</script>
+        }
+    </script>
 </body>
 </html>
